@@ -27,6 +27,7 @@ span {
 
 .left-section {
     display: flex;
+    flex-direction: column;
     background-image: url("./images/background.jpg");
     background-size: 100% 100%;
     width: clamp(43vh, 37vw, 60vh);
@@ -36,7 +37,7 @@ span {
 .left-header {
     position: relative;
     display: flex;
-    width: 100vw;
+    width: clamp(43vh, 37vw, 60vh);
     height: 13.3vh;
     top: 20.3vh;
     background-color: rgba(79, 123, 121, 0.5);
@@ -131,4 +132,41 @@ input {
     height: 4.3vh;
     border-radius: 0.5vh;
     border: 0.28vh #2E4D48 solid;
+}
+
+.create-account {
+    position: relative;
+    left: clamp(8.16vh, 5.76vw, 8.16vh);
+    top: 27vh;
+    width: 21vh;
+    height: 7vh;
+    font-size: 1.95vh;
+    color: #D9D9D9;
+    background-color: #2B2D28;
+    border: 0.28vh #96AFA9 solid;
+    border-radius: 0.5vh;
+}
+
+.text-login {
+    position: relative;
+    top: 28vh;
+    left: clamp(8.16vh, 5.76vw, 8.16vh);
+    font-size: 1.6vh;
+    color: #D9D9D9;
+    width: 22vh;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #D16427;
+}
+
+.footer-link {
+    display: flex;
+    position: relative;
+    top: 82vh;
+    color: #E0E0E0;
+    align-self: center;
+    font-size: 1.8vh;
 }
