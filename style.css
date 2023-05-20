@@ -11,13 +11,12 @@
     font-size: 16px;
 }
 
-.logo {
-    width: 10vh;
-    height: 10vh;
-}
-
 body {
     height: 100vh;
+}
+
+span {
+    color: #D16427;
 }
 
 .wrapper {
@@ -30,15 +29,8 @@ body {
     display: flex;
     background-image: url("./images/background.jpg");
     background-size: 100% 100%;
-    width: clamp(37vw, 37vw, 100vw);
-    min-width: 40vh;
+    width: clamp(43vh, 37vw, 60vh);
     height: 100vh;
-}
-
-.right-section {
-    display: flex;
-    width: clamp(63vw, 63vw, 100vw);
-    background-color: #2E4D48;
 }
 
 .left-header {
@@ -48,11 +40,89 @@ body {
     height: 13.3vh;
     top: 20.3vh;
     background-color: rgba(79, 123, 121, 0.5);
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 1vw;
 }
 
 .left-header text {
     font-size: 9.37vh;
+    color: #D9D9D9;
+}
+
+.logo {
+    width: 13vh;
+    height: 13vh;
+}
+
+.right-section {
+    display: flex;
+    width: clamp(60vh, 100vw, 178vh);
+    flex-direction: column;
+    background-color: #2E4D48;
+}
+
+h1,
+.right-section p,
+.right-section text {
+    position: relative;
+    font-size: 2.7vh;
+    left: clamp(8.16vh, 5.76vw, 8.16vh);
+    color: #D9D9D9;
+}
+
+.right-section text {
+    top: 23vh;
+    height: 10vh;
+}
+
+.right-section p {
+    top: 20.1vh;
+    width: 64vh;
+    height: 10vh;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 22.5vh;
+    height: 35vh;
+    background-color: #96AFA9;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fields {
+    height: 100vh;
+    width: 57vw;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    color: #292F2B;
+}
+
+input,
+label {
+    display: block;
+    position: relative;
+    font-size: 1.35vh;;
+    left: clamp(8.16vh, 5.76vw, 8.16vh);
+}
+
+input {
+    background-color: #D9D9D9;
+    width: 19vw;
+    height: 4.3vh;
+    border-radius: 0.28vw;
+    border: 0.14vw #2E4D48 solid;
 }
