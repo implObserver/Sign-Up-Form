@@ -141,6 +141,9 @@ label {
     height: 4.3vh;
     border-radius: 0.5vh;
     border: 0.28vh #2E4D48 solid;
+    padding: 0.5vh;
+    font-size: 2vh;
+    
 }
 
 .create-account {
@@ -175,18 +178,15 @@ a:hover {
     color:#fc5c00;
 }
 
-input[type="text"] {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    margin: 0;
-}
-
 .field:focus {
     appearance: none;
     outline: none;
-    border: 0.21vh #f5ad83 solid;
+    border: 0.28vh #4c7a73 solid;
     background-color: #ebeaea;
+}
+
+.field:hover {
+    top: 0.1vh;
 }
 
 .create-account:hover {
@@ -195,4 +195,8 @@ input[type="text"] {
 
 .create-account:active {
     top: 27.2vh;
+}
+
+::placeholder {
+    opacity: 0.4;
 }
