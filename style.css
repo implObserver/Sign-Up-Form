@@ -182,11 +182,10 @@ input[type="text"] {
     margin: 0;
 }
 
-.field:focus,
-label:focus {
+.field:focus {
     appearance: none;
     outline: none;
-    border: 0.21vh #D16427 solid;
+    border: 0.21vh #f5ad83 solid;
     background-color: #ebeaea;
 }
 
