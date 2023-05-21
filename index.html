@@ -26,37 +26,37 @@
             </p>
             <text><span>Just</span> Do It:</text>
 
-            <form action="/my-handling0form-page" method="post">
+            <form id="registration" action="#" method="post">
                 <h1>Lets's do this!</h1>
                 <ul class="fields">
                     <li>
-                        <label for="name">FIRST NAME</label>
-                        <input type="text" id="name" name="user_name">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="user_first-name" class="field">
                     </li>
                     <li>
-                        <label for="name">SECOND NAME</label>
-                        <input type="text" id="name" name="user_name">
+                        <label for="second-name">SECOND NAME</label>
+                        <input type="text" id="second-name" name="user_second-name" class="field">
                     </li>
                     <li>
                         <label for="mail">EMAIL</label>
-                        <input type="email" id="mail" name="user_email">
+                        <input type="email" id="mail" name="user_email" class="field">
                     </li>
                     <li>
-                        <label for="name">PHONE NUMBER</label>
-                        <input type="text" id="name" name="user_name">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="user_phone-number" class="field">
                     </li>
                     <li>
-                        <label for="name">PASSWORD</label>
-                        <input type="text" id="name" name="user_name">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="user_password" class="field">
                     </li>
                     <li>
-                        <label for="name">CONFIRM PASSWORD</label>
-                        <input type="text" id="name" name="user_name">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="user_confirm-password" class="field">
                     </li>
                 </ul>
             </form>
 
-            <button class="create-account">CREATE ACCOUNT</button>
+            <input class="create-account" type="submit" form="registration" value="CREATE ACCOUNT">
             <div class="text-login">Already have an account? <a href="#">Log in</a></div>
         </div>
     </div>
