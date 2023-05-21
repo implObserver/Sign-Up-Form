@@ -26,20 +26,20 @@ body {
     flex-direction: column;
     background-image: url("./images/background.jpg");
     background-size: 100% 100%;
-    width: clamp(43vh, 37vw, 60vh);
+    width: clamp(45vh, 37vw, 60vh);
     height: 100vh;
 }
 
 .left-header {
     position: relative;
     display: flex;
-    width: clamp(43vh, 37vw, 60vh);
+    width: clamp(45vh, 37vw, 60vh);
     height: 13.3vh;
     top: 20.3vh;
     background-color: rgba(79, 123, 121, 0.5);
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 1vh;
 }
 
 .left-header text {
