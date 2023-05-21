@@ -186,7 +186,7 @@ a:hover {
 }
 
 .field:hover {
-    top: 0.1vh;
+    border: 0.28vh #3a645e solid;
 }
 
 .create-account:hover {
@@ -199,4 +199,5 @@ a:hover {
 
 ::placeholder {
     opacity: 0.4;
+    font-size: 1.35vh;
 }
