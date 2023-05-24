@@ -21,7 +21,7 @@ const errorRepository = {
         password: 'Minimum eight characters, at least one letter and one number',
     },
     tooShort: e => {
-        return `Email should be at least ${e.minLength} characters; you entered ${e.value.length}.`
+        return `Email should be at least ${e.minLength} characters you entered ${e.value.length}.`
     },
 
     confirm_password: 'Passwords don\'t match',
