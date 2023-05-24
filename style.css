@@ -778,7 +778,7 @@
         flex-direction: column;
         align-items: center;
 
-        gap: 40px;
+        gap: 10px;
         margin-bottom: 60px;
     }
 
@@ -787,11 +787,11 @@
 
         background-color: #D9D9D9;
 
-        width: 55vw;
-        height: 64px;
+        width: 80vw;
+        height: 9vh;
 
-        border-radius: 4px;
-        border: 2px #2E4D48 solid;
+        border-radius: 1vh;
+        border: 0.38vh #2E4D48 solid;
 
         font-size: 30px;
 
@@ -840,7 +840,7 @@
 
     .error {
         display: flex;
-        max-width: 55vw;
+        max-width: 80vw;
         font-size: 30px;
         color: #900;
         background-color: #ebeaea;
