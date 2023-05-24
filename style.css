@@ -915,8 +915,8 @@
 
         display: flex;
         align-self: flex-end;
-        justify-self: center;
-
+        justify-self: flex-start;
+        padding-left: 14vw;
         font-size: 2vh;
 
         padding-bottom: 1vh;
@@ -1023,6 +1023,7 @@
         border-radius: 0.9vh;
 
         width: 15vw;
+        max-width: 300px;
         height: 8vh;
 
         margin-left: 5.4vw;
@@ -1033,8 +1034,8 @@
     }
 
     .text-login {
-        width: 14vw;
-
+        width: 15vw;
+        max-width: 300px;
         margin-left: 5.4vw;
 
         font-size: 1.5vh;
