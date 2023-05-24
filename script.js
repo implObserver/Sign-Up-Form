@@ -2,6 +2,7 @@ const form = document.querySelector('form');
 
 const fields = {
     first_name: document.getElementById('first_name'),
+    last_name: document.getElementById('last_name'),
     phone_number: document.getElementById('phone_number'),
     confirm_password: document.getElementById('confirm_password'),
     mail: document.getElementById('mail'),
@@ -46,21 +47,43 @@ fields.phone_number.addEventListener('input', e => {
     validation(fields.phone_number);
 });
 
-fields.password.addEventListener('input', e => {
+fields.password.addEventListener('keyup', e => {
     validation(fields.password);
+    getConfirmPassword(fields.confirm_password);
 });
 
-fields.confirm_password.addEventListener('keyup', e => {
-    errorSpans.confirm_password.textContent = confirmPassword() ? '' : errorRepository.confirm_password;
+fields.confirm_password.addEventListener('keyup', getConfirmPassword);
+
+function getConfirmPassword() {
+    if (confirmPassword()) {
+        setValid(fields.confirm_password);
+        errorSpans.confirm_password.textContent = '';
+        console.log(fields.confirm_password.textContent);
+        if (fields.confirm_password.value === '') {
+            setInvalid(fields.confirm_password);
+            errorSpans.confirm_password.textContent = errorRepository.valueMissing(fields.confirm_password).replace('enter an', '');
+        }
+    } else {
+        setInvalid(fields.confirm_password);
+        errorSpans.confirm_password.textContent = errorRepository.confirm_password;
+
+    }
+}
+
+fields.last_name.addEventListener('input', e => {
+    if (fields.last_name.value === '') {
+        resetValidBorder(fields.last_name);
+    } else {
+        setValidBorder(fields.last_name);
+    }
 });
 
 function validation(element) {
     if (element.validity.valid) {
         errorSpans[element.id].textContent = '';
-        errorSpans[element.id].className = "error";
-        resetErrorBorder(element);
+        setValid(element);
     } else {
-        setErrorBorder(element);
+        setInvalid(element);
         showError(element);
     }
 }
@@ -94,4 +117,24 @@ function setErrorBorder(element) {
 
 function resetErrorBorder(element) {
     element.classList.remove('invalid');
+}
+
+function setValidBorder(element) {
+    if (element.value != '') {
+        element.classList.add('valid');
+    }
+}
+
+function resetValidBorder(element) {
+    element.classList.remove('valid');
+}
+
+function setInvalid(element) {
+    resetValidBorder(element);
+    setErrorBorder(element);
+}
+
+function setValid(element) {
+    resetErrorBorder(element);
+    setValidBorder(element);
 }

@@ -11,73 +11,76 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="left-section">
-            <div class="left-header">
-                <text>WOOD</text>
-                <img class="logo" src="./images/svg/logo.svg" alt="squirell">
-            </div>
-
-            <div class="footer-link">Created by&nbsp; <a href="https://github.com/implObserver/Sign-Up-Form">
-                    Observer</a>
-            </div>
+    <div class="section-1">     
+        <div class="section-1__header">
+            <text class="text-v1">WOOD</text>
+            <text class="text-v2">WO</text>
+            <text class="text-v2">OD</text>
         </div>
-        <div class="right-section">
-            <p><span>This is not a real online service!</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-            </p>
-            <text><span class="orange">Just</span> Do It:</text>
 
-            <form id="registration" action="#" method="post">
-                <h1>Lets's do this!</h1>
-                <ul class="fields">
-                    <li>
-                        <label for="first_name">FIRST NAME <span aria-label="required">*</span></label>
-                        <input type="text" id="first_name" name="user_first-name" placeholder="Enter first name"
-                            class="field" maxlength="50" required>
-                        <span class="error" aria-live="polite"></span>
-                    </li>
-                    <li>
-                        <label for="second_name">LAST NAME</label>
-                        <input type="text" id="last_name" name="user_last-name" class="field"
-                            placeholder="Enter last name" maxlength="50">
-                        <span class="error" aria-live="polite"></span>
-                    </li>
-                    <li>
-                        <label for="mail">EMAIL<span aria-label="required">*</span></label>
-                        <input type="email" id="mail" name="user_email" class="field" placeholder="Add email"
-                            minlength="8" required>
-                        <span class="error" aria-live="polite"></span>
-                    </li>
-                    <li>
-                        <label for="phone_number">PHONE NUMBER</label>
-                        <input type="tel" id="phone_number" name="user_phone-number" class="field"
-                            placeholder="Enter \'+\' and phone number"
-                            pattern="^\+((?:9[679]|8[035789]|6[789]|5[90]|42|3[578]|2[1-689])|9[0-58]|8[1246]|6[0-6]|5[1-8]|4[013-9]|3[0-469]|2[70]|7|1)(?:\W*\d){0,13}\d$">
-                        <span class="error" aria-live="polite"></span>
-
-                    </li>
-                    <li>
-                        <label for="password">PASSWORD<span aria-label="required">*</span></label>
-                        <input type="password" id="password" name="user_password" class="field"
-                            placeholder="Enter password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
-                        <span class="error" aria-live="polite"></span>
-
-                    </li>
-                    <li>
-                        <label for="confirm_password">CONFIRM PASSWORD<span aria-label="required">*</span></label>
-                        <input type="password" id="confirm_password" name="user_confirm-password" class="field"
-                            placeholder="Confirm password" required>
-                        <span class="error" aria-live="polite"></span>
-
-                    </li>
-                </ul>
-            </form>
-
-            <input class="create-account" type="submit" value="CREATE ACCOUNT">
-            <div class="text-login">Already have an account? <a href="#">Log in</a></div>
+        <div class="logo-wrapper">
+            <img class="logo" src="./images/svg/logo.svg" alt="squirell">
         </div>
+
+        <div class="footer-link">Created by&nbsp; <a href="https://github.com/implObserver/Sign-Up-Form">
+                Observer</a>
+        </div>
+    </div>
+
+    <div class="section-2">
+        <p><span class="orange">This is not a real online service!</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+        <text><span class="orange">Just</span> Do It:</text>
+    </div>
+
+    <form id="registration" action="#" method="post">
+        <h1>Lets's do this!</h1>
+        <ul class="fields">
+            <li>
+                <label for="first_name">FIRST NAME <span aria-label="required">*</span></label>
+                <input type="text" id="first_name" name="user_first-name" placeholder="Enter first name..." class="field"
+                    maxlength="50" required>
+                <span class="error" aria-live="polite"></span>
+            </li>
+            <li>
+                <label for="last_name">LAST NAME</label>
+                <input type="text" id="last_name" name="user_last-name" class="field" placeholder="Enter last name..."
+                    maxlength="50">
+                <span class="error" aria-live="polite"></span>
+            </li>
+            <li>
+                <label for="mail">EMAIL<span aria-label="required">*</span></label>
+                <input type="email" id="mail" name="user_email" class="field" placeholder="Add email..." minlength="8"
+                    required>
+                <span class="error" aria-live="polite"></span>
+            </li>
+            <li>
+                <label for="phone_number">PHONE NUMBER</label>
+                <input type="tel" id="phone_number" name="user_phone-number" class="field"
+                    placeholder="Enter \'+\' and phone number..."
+                    pattern="^\+((?:9[679]|8[035789]|6[789]|5[90]|42|3[578]|2[1-689])|9[0-58]|8[1246]|6[0-6]|5[1-8]|4[013-9]|3[0-469]|2[70]|7|1)(?:\W*\d){0,13}\d$">
+                <span class="error" aria-live="polite"></span>
+            </li>
+            <li>
+                <label for="password">PASSWORD<span aria-label="required">*</span></label>
+                <input type="password" id="password" name="user_password" class="field" placeholder="Enter password..."
+                    pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+                <span class="error" aria-live="polite"></span>
+            </li>
+            <li>
+                <label for="confirm_password">CONFIRM PASSWORD<span aria-label="required">*</span></label>
+                <input type="password" id="confirm_password" name="user_confirm-password" class="field"
+                    placeholder="Confirm password..." required>
+                <span class="error" aria-live="polite"></span>
+            </li>
+        </ul>
+    </form>
+
+    <div class="registration-submit">
+        <input class="create-account" type="submit" value="CREATE ACCOUNT">
+        <div class="text-login">Already have an account? <a href="#">Log in</a></div>
     </div>
 </body>
 
