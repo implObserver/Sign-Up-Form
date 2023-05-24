@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320.5px) {
     body {
         background: rgb(241, 206, 206);
 
@@ -48,11 +48,14 @@
         height: 165px;
     }
 
-    .section-1__header .text-v1 {
-        display: none;
+    .title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
-    .section-1__header .text-v2 {
+    .char {
         font-size: 64px;
         color: #D9D9D9;
     }
@@ -141,7 +144,7 @@
         margin-top: 5px;
         font-size: 20px;
         text-align: center;
-        color:#3a3f3c
+        color: #3a3f3c
     }
 
     ul {
@@ -288,31 +291,309 @@
     }
 }
 
-@media only screen and (min-width: 321px) and (max-width: 480px) {
+@media only screen and (min-width: 321px) and (max-width: 480.5px) {
     body {
         background: rgb(245, 230, 203);
+        ;
+
+        display: grid;
+        grid-template-areas:
+            'section-1'
+            'section-2'
+            'registration'
+            'registration-submit';
+    }
+
+    .section-1 {
+        grid-area: section-1;
+
+        background-image: url("./images/background.jpg");
+        background-size: 100% 100%;
+
+        display: grid;
+        grid-template-areas:
+            'header logo'
+            'header link';
+
+        width: 100vw;
+        min-height: 262px;
+    }
+
+    .section-1__header {
+        grid-area: header;
+
+        background-color: #4f7b7980;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 133px;
+        height: 262px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .char {
+        font-size: 56px;
+        color: #D9D9D9;
+    }
+
+    .logo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 353px;
+        max-height: 242px;
+    }
+
+    .logo {
+        grid-area: logo;
+
+        width: 55vw;
+        height: 55vw;
+    }
+
+    .footer-link {
+        grid-area: link;
+
+        display: flex;
+        align-self: center;
+        justify-self: center;
+
+        font-size: 12px;
+        color: #E0E0E0;
+    }
+
+    .section-2 {
+        grid-area: section-2;
+
+        background-color: #2E4D48;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        width: 100vw;
+        min-height: 124px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #D9D9D9;
+
+        width: 90vw;
+
+        margin-top: 9px;
+        margin-left: 13px;
+        margin-bottom: 18px;
+    }
+
+    .section-2 text {
+        color: #D9D9D9;
+        font-size: 14px;
+
+        width: 40vw;
+
+        margin-left: 13px;
+        margin-bottom: 5px;
+    }
+
+    .orange {
+        color: #D16427;
+    }
+
+    #registration {
+        grid-area: registration;
+
+        background-color: #96AFA9;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100vw;
+        min-height: 369px;
+
+        gap: 10px;
+    }
+
+    #registration h1 {
+        margin-top: 5px;
+        font-size: 25px;
+        text-align: center;
+        color: #3a3f3c
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .fields {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .field {
+        display: flex;
+
+        background-color: #D9D9D9;
+
+        width: 80vw;
+        height: 44px;
+
+        border-radius: 4px;
+        border: 2px #2E4D48 solid;
+
+        font-size: 12;
+
+        padding-left: 5px;
+    }
+
+    label {
+        display: none;
+    }
+
+    .registration-submit {
+        grid-area: registration-submit;
+
+        background-color: #2E4D48;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100vw;
+        min-height: 117px;
+    }
+
+    .create-account {
+        background-color: #2B2D28;
+
+        border: 1px #96AFA9 solid;
+        border-radius: 4px;
+
+        width: 126px;
+        height: 43px;
+
+        font-size: 10px;
+        color: #D9D9D9;
+    }
+
+    .text-login {
+        width: 126px;
+
+        font-size: 8px;
+        color: #D9D9D9;
+    }
+
+    a {
+        outline: none;
+        text-decoration: none;
+
+        color: #D16427;
+    }
+
+    a:hover {
+        color: #fc5c00;
+    }
+
+    .field:hover {
+        border: 0.38vh #476863 solid;
+    }
+
+    .field:focus {
+        appearance: none;
+        outline: none;
+        border: 0.38vh #4c7a73 solid;
+        background-color: #ebeaea;
+    }
+
+    .create-account:hover {
+        background-color: #3a3f3c;
+    }
+
+    .create-account:active {
+        position: relative;
+        top: +1px;
+    }
+
+    ::placeholder {
+        opacity: 0.4;
+        font-size: 12px;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 44px white inset !important;
+    }
+
+    .error {
+        display: flex;
+        max-width: 80vw;
+        font-size: 12px;
+        color: #900;
+        background-color: #ebeaea;
+        border-radius: 0.5vh 0.5vh 0.5vh 0.5vh;
+    }
+
+    .error:not(:empty) {
+        border: 1px #900 solid;
+    }
+
+    .invalid,
+    .invalid:focus {
+        border: 2px #900 solid;
+    }
+
+    .invalid:hover {
+        border: 0.38vh rgb(221, 50, 50) solid;
+    }
+
+    .valid,
+    .valid:focus {
+        border: 2px rgb(60, 161, 69) solid;
+    }
+
+    .valid:hover {
+        border: 0.38vh rgb(86, 197, 96) solid;
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768.5px) {
     body {
         background: rgb(241, 241, 156);
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024.5px) {
     body {
         background: rgb(228, 255, 228);
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+@media only screen and (min-width: 1025px) and (max-width: 1600.5px) {
     body {
         background: lightblue;
     }
 }
 
-@media only screen and (min-width: 1601px) and (max-width: 1920px) {
+@media only screen and (min-width: 1601px) and (max-width: 1920.5px) {
     body {
         background: rgb(200, 200, 255);
     }
