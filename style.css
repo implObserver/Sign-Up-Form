@@ -1022,9 +1022,7 @@
         border: 1px #96AFA9 solid;
         border-radius: 0.9vh;
 
-        width: 15vw;
-        min-width: 250px;
-        max-width: 300px;
+        width: 300px;
         height: 8vh;
 
         margin-left: 5.4vw;
@@ -1035,9 +1033,7 @@
     }
 
     .text-login {
-        width: 15vw;
-        min-width: 250px;
-        max-width: 300px;
+        width: 300px;
         margin-left: 5.4vw;
 
         font-size: 1.5vh;
