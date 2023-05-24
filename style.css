@@ -849,12 +849,12 @@
     }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1600.5px) {
+@media only screen and (min-width: 1025px){
     body {
         background: lightblue;
 
         display: grid;
-        grid-template-columns: clamp(540px, 40vw, 40vw) 60vw;
+        grid-template-columns: clamp(310px, 40vw, 40vw) 60vw;
         grid-template-areas:
             'section-1 section-2'
             'section-1 registration'
@@ -881,8 +881,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
-        height: 136px;
+        width: clamp(310px, 30vw, 30vw);
+        height: 10vw;
     }
 
     .title {
@@ -891,7 +891,7 @@
     }
 
     .char {
-        font-size: 124px;
+        font-size: 9vw;
         color: #D9D9D9;
     }
 
@@ -899,15 +899,15 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        max-width: 400px;
-        max-height: 136px;
+        width: clamp(310px, 40vw, 40vw);
+        height: 10vw;
         background-color: #4f7b7980;
     }
 
     .logo {
         grid-area: logo;
-        width: 150px;
-        height: 150px;
+        width: 9vw;
+        height: 9vw;
     }
 
     .footer-link {
@@ -917,7 +917,7 @@
         align-self: flex-end;
         justify-self: center;
 
-        font-size: 12px;
+        font-size: 2vh;
 
         padding-bottom: 1vh;
         color: #E0E0E0;
@@ -937,7 +937,7 @@
     }
 
     p {
-        font-size: 30px;
+        font-size: 3vh;
         color: #D9D9D9;
 
         width: 54vw;
@@ -948,12 +948,11 @@
 
     .section-2 text {
         color: #D9D9D9;
-        font-size: 30px;
+        font-size: 3vh;
 
         width: 40vw;
 
         margin-left: 5.6vw;
-        margin-bottom: 5px;
     }
 
     #registration {
@@ -967,14 +966,14 @@
         justify-content: center;
         min-height: 500px;
 
-        gap: 10px;
+        gap: 1vh;
     }
 
     #registration h1 {
-        font-size: 35px;
+        font-size: 3.5vh;
         align-self: flex-start;
         color: #3a3f3c;
-        margin-bottom: 20px;
+        margin-bottom: 1vh;
         margin-left: 5.5vw;
     }
 
@@ -983,7 +982,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
-        gap: 40px;
+        gap: 2vh;
         width: 50vw;
         margin-bottom: 60px;
     }
@@ -994,14 +993,14 @@
         background-color: #D9D9D9;
 
         width: 23vw;
-        height: 64px;
+        height: 6vh;
 
         border-radius: 8px;
-        border: 3px #2E4D48 solid;
+        border: 0.38vh #2E4D48 solid;
 
-        font-size: 30px;
+        font-size: 2.5vh;
 
-        padding-left: 5px;
+        padding-left: 1vw;
     }
 
     .registration-submit {
@@ -1021,445 +1020,31 @@
         background-color: #2B2D28;
 
         border: 1px #96AFA9 solid;
-        border-radius: 4px;
+        border-radius: 0.9vh;
 
-        width: 240px;
-        height: 100px;
+        width: 15vw;
+        height: 8vh;
 
-        margin-bottom: 5px;
         margin-left: 5.4vw;
+        margin-bottom: 1vh;
 
-        font-size: 20px;
+        font-size: 1.5vh;
         color: #D9D9D9;
     }
 
     .text-login {
-        width: 230px;
+        width: 14vw;
 
         margin-left: 5.4vw;
 
-        font-size: 16px;
+        font-size: 1.5vh;
         color: #D9D9D9;
     }
 
     .error {
         display: flex;
         max-width: 23vw;
-        font-size: 20px;
-        color: #900;
-        background-color: #ebeaea;
-        border-radius: 0.5vh 0.5vh 0.5vh 0.5vh;
-        padding-left: 0.5vw;
-    }
-}
-
-@media only screen and (min-width: 1601px) and (max-width: 1920.5px) {
-    body {
-        background: rgb(200, 200, 255);
-
-        display: grid;
-        grid-template-columns: clamp(540px, 40vw, 40vw) 60vw;
-        grid-template-areas:
-            'section-1 section-2'
-            'section-1 registration'
-            'section-1 registration-submit';
-        height: 100vh;
-    }
-
-    .section-1 {
-        grid-area: section-1;
-
-        background-image: url("./images/background.jpg");
-        background-size: 100% 100%;
-        padding-top: 15.5vh;
-
-        display: grid;
-        grid-template-areas:
-            'header logo'
-            'link link';
-    }
-
-    .section-1__header {
-        grid-area: header;
-        background-color: #4f7b7980;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        height: 136px;
-    }
-
-    .title {
-        display: flex;
-        align-items: center;
-    }
-
-    .char {
-        font-size: 124px;
-        color: #D9D9D9;
-    }
-
-    .logo-wrapper {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        max-width: 400px;
-        max-height: 136px;
-        background-color: #4f7b7980;
-    }
-
-    .logo {
-        grid-area: logo;
-        width: 150px;
-        height: 150px;
-    }
-
-    .footer-link {
-        grid-area: link;
-
-        display: flex;
-        align-self: flex-end;
-        justify-self: center;
-
-        font-size: 12px;
-
-        padding-bottom: 1vh;
-        color: #E0E0E0;
-    }
-
-    .section-2 {
-        grid-area: section-2;
-
-        background-color: #2E4D48;
-
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-top: 15vh;
-
-        min-height: 400px;
-    }
-
-    p {
-        font-size: 30px;
-        color: #D9D9D9;
-
-        width: 54vw;
-
-        margin-left: 5.6vw;
-        margin-bottom: 26px;
-    }
-
-    .section-2 text {
-        color: #D9D9D9;
-        font-size: 30px;
-
-        width: 40vw;
-
-        margin-left: 5.6vw;
-        margin-bottom: 5px;
-    }
-
-    #registration {
-        grid-area: registration;
-
-        background-color: #96AFA9;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 500px;
-
-        gap: 10px;
-    }
-
-    #registration h1 {
-        font-size: 35px;
-        align-self: flex-start;
-        color: #3a3f3c;
-        margin-bottom: 20px;
-        margin-left: 5.5vw;
-    }
-
-    .fields {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-        gap: 40px;
-        width: 50vw;
-        margin-bottom: 60px;
-    }
-
-    .field {
-        display: flex;
-
-        background-color: #D9D9D9;
-
-        width: 23vw;
-        height: 64px;
-
-        border-radius: 8px;
-        border: 3px #2E4D48 solid;
-
-        font-size: 30px;
-
-        padding-left: 5px;
-    }
-
-    .registration-submit {
-        grid-area: registration-submit;
-
-        background-color: #2E4D48;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-
-        min-height: 185px;
-    }
-
-    .create-account {
-        background-color: #2B2D28;
-
-        border: 1px #96AFA9 solid;
-        border-radius: 4px;
-
-        width: 240px;
-        height: 100px;
-
-        margin-bottom: 5px;
-        margin-left: 5.4vw;
-
-        font-size: 20px;
-        color: #D9D9D9;
-    }
-
-    .text-login {
-        width: 230px;
-
-        margin-left: 5.4vw;
-
-        font-size: 16px;
-        color: #D9D9D9;
-    }
-
-    .error {
-        display: flex;
-        max-width: 23vw;
-        font-size: 20px;
-        color: #900;
-        background-color: #ebeaea;
-        border-radius: 0.5vh 0.5vh 0.5vh 0.5vh;
-        padding-left: 0.5vw;
-    }
-}
-
-@media screen and (min-width: 1921px) {
-    body {
-        background: rgb(252, 176, 252);
-
-        display: grid;
-        grid-template-columns: clamp(540px, 40vw, 40vw) 60vw;
-        grid-template-areas:
-            'section-1 section-2'
-            'section-1 registration'
-            'section-1 registration-submit';
-        height: 100vh;
-    }
-
-    .section-1 {
-        grid-area: section-1;
-
-        background-image: url("./images/background.jpg");
-        background-size: 100% 100%;
-        padding-top: 15.5vh;
-
-        display: grid;
-        grid-template-areas:
-            'header logo'
-            'link link';
-    }
-
-    .section-1__header {
-        grid-area: header;
-        background-color: #4f7b7980;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        height: 136px;
-    }
-
-    .title {
-        display: flex;
-        align-items: center;
-    }
-
-    .char {
-        font-size: 124px;
-        color: #D9D9D9;
-    }
-
-    .logo-wrapper {
-        background-color: #4f7b7980;
-
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-        max-width: 400px;
-        max-height: 136px;
-    }
-
-    .logo {
-        grid-area: logo;
-
-        width: 150px;
-        height: 150px;
-    }
-
-    .footer-link {
-        grid-area: link;
-
-        display: flex;
-        align-self: flex-end;
-        justify-self: center;
-
-        font-size: 12px;
-
-        padding-bottom: 1vh;
-        color: #E0E0E0;
-    }
-
-    .section-2 {
-        grid-area: section-2;
-
-        background-color: #2E4D48;
-
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-top: 15vh;
-
-        min-height: 400px;
-    }
-
-    p {
-        font-size: 30px;
-        color: #D9D9D9;
-
-        width: 54vw;
-
-        margin-left: 5.6vw;
-        margin-bottom: 26px;
-    }
-
-    .section-2 text {
-        color: #D9D9D9;
-        font-size: 30px;
-
-        width: 40vw;
-
-        margin-left: 5.6vw;
-        margin-bottom: 5px;
-    }
-
-    #registration {
-        grid-area: registration;
-
-        background-color: #96AFA9;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 500px;
-
-        gap: 10px;
-    }
-
-    #registration h1 {
-        font-size: 35px;
-        color: #3a3f3c;
-
-        align-self: flex-start;
-        margin-bottom: 20px;
-        margin-left: 5.5vw;
-    }
-
-    .fields {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-
-        width: 50vw;
-
-        gap: 40px;
-        margin-bottom: 60px;
-    }
-
-    .field {
-        display: flex;
-
-        background-color: #D9D9D9;
-
-        width: 23vw;
-        height: 64px;
-
-        border-radius: 8px;
-        border: 3px #2E4D48 solid;
-
-        font-size: 30px;
-
-        padding-left: 5px;
-    }
-
-    .registration-submit {
-        grid-area: registration-submit;
-
-        background-color: #2E4D48;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-
-        min-height: 185px;
-    }
-
-    .create-account {
-        background-color: #2B2D28;
-
-        border: 1px #96AFA9 solid;
-        border-radius: 4px;
-
-        width: 240px;
-        height: 100px;
-
-        margin-bottom: 5px;
-        margin-left: 5.4vw;
-
-        font-size: 20px;
-        color: #D9D9D9;
-    }
-
-    .text-login {
-        width: 230px;
-
-        margin-left: 5.4vw;
-
-        font-size: 16px;
-        color: #D9D9D9;
-    }
-
-    .error {
-        display: flex;
-        max-width: 23vw;
-        font-size: 20px;
+        font-size: 1.8vh;
         color: #900;
         background-color: #ebeaea;
         border-radius: 0.5vh 0.5vh 0.5vh 0.5vh;
